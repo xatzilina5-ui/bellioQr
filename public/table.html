@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bellio - Τραπέζι</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page">
+  <header class="center">
+    <img src="/assets/logo.png" alt="Logo" class="logo" />
+  </header>
+  <main class="card">
+    <h1>Εξυπηρέτηση Τραπεζιού</h1>
+    <p class="muted">Σκανάρατε το QR του τραπεζιού σας. Επιλέξτε τι χρειάζεστε:</p>
+    <div class="grid">
+      <button class="btn" data-action="call">Κάλεσε τον σερβιτόρο</button>
+      <button class="btn" data-action="order">Θέλω να παραγγείλω</button>
+      <button class="btn" data-action="cash">Θέλω να πληρώσω με μετρητά</button>
+      <button class="btn" data-action="card">Θέλω να πληρώσω με κάρτα</button>
+    </div>
+    <p id="status" class="status"></p>
+  </main>
+  <footer class="center muted">© <span id="brand">Bellio</span></footer>
+
+  <script src="/table.js"></script>
+</body>
+</html>
